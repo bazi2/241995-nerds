@@ -173,19 +173,16 @@
   		<h2 class="modal-contacts-title">Напишите нам</h2>
   		<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label>Ваше имя:<br>
-            <input class="feedback-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-          </label>
+          <label for="field-name">Ваше имя:</label><br>
+          <input id="field-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
         </p>
         <p>
-          <label>Ваш e-mail:<br>
-            <input class="feedback-email" type="email" name="email" placeholder="Для отправки ответа">
-          </label>
+          <label for="field-email">Ваш e-mail:</label><br>
+          <input id="field-email" type="email" name="email" placeholder="Для отправки ответа">
         </p>
         <p>
-          <label>Текст письма:<br>
-            <textarea class="feedback-comment" name="comment">В свободной форме</textarea>
-          </label>
+          <label for="field-comment">Текст письма:</label><br>
+          <textarea id="field-comment" name="comment">В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>        
       </form>

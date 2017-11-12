@@ -40,23 +40,18 @@
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
-              <li class="filter-form-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
-                  Адаптивная
-              </label>
+              <li class="filter-form-option">                
+                  <input class="visually-hidden" id="field-adaptive" type="radio" name="grid" value="adaptive" checked>
+                  <label for="field-adaptive">Адаптивная</label>
               </li>
               <li class="filter-form-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="fixed">
-                Фиксированная
-              </label>
+                
+                  <input class="visually-hidden" id="field-fixed" type="radio" name="grid" value="fixed">
+                <label for="field-fixed">Фиксированная</label>
               </li>
-              <li class="filter-form-option">
-                <label>
-                  Резиновая
-                  <!-- ВОПРОС: почему на макете нет радио баттона? -->
-                </label>
+              <li class="filter-form-option">                
+                  <input class="visually-hidden" id="field-stretshes" type="radio" name="grid" value="stretches">
+                  <label for="field-stretshes">Резиновая</label> 
               </li>
             </ul> 
           </fieldset>
@@ -64,35 +59,25 @@
             <fieldset>
               <legend>Особенности:</legend>
               <ul>
-                <li class="filter-form-option">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="slider" checked>
-                    Слайдер
-                  </label>
+                <li class="filter-form-option">                  
+                    <input class="visually-hidden" id="field-slider" type="checkbox" name="slider" checked>
+                    <label for="field-slider">Слайдер</label>
                 </li>
                 <li class="filter-form-option">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="features">
-                    Блок преимуществ
-                  </label>
+                    <input class="visually-hidden" id="field-features" type="checkbox" name="features">
+                    <label for="field-features">Блок преимуществ</label>
                 </li>
                 <li class="filter-form-option">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="news" checked>
-                    Новости
-                  </label>
+                    <input class="visually-hidden" id="field-news" type="checkbox" name="news" checked>
+                    <label for="field-news">Новости</label>
                 </li>
                 <li class="filter-form-option">
-                  <label>
-                    <input class="visually-hidden" type="checkbox" name="gallery">
-                    Галерея
-                  </label>
+                    <input class="visually-hidden" id="field-gallery" type="checkbox" name="gallery">
+                    <label for="field-gallery">Галерея</label>
                 </li>
                 <li class="filter-form-option">
-                  <label>
-                    <input type="checkbox" name="cart">
-                    Корзина
-                  </label>
+                    <input class="visually-hidden" id="field-cart" type="checkbox" name="cart">
+                    <label for="field-cart">Корзина</label>
                 </li>
               </ul>   
           </fieldset>
@@ -219,19 +204,16 @@
       <h2 class="modal-contacts-title">Напишите нам</h2>
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label>Ваше имя:<br>
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-          </label>
+          <label for="field-name">Ваше имя:</label><br>
+            <input id="field-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
         </p>
         <p>
-          <label>Ваш e-mail:<br>
-            <input type="email" name="email" placeholder="Для отправки ответа">
-          </label>
+          <label for="field-email">Ваш e-mail:</label><br>
+          <input id="field-email" type="email" name="email" placeholder="Для отправки ответа">
         </p>
         <p>
-          <label>Текст письма:<br>
-            <textarea name="comment">В свободной форме</textarea>
-          </label>
+          <label for="field-comment">Текст письма:</label><br>
+          <textarea id="field-comment" name="comment">В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>        
       </form>
