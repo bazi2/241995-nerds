@@ -26,6 +26,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	color: #000000;
@@ -129,19 +130,19 @@ a {
 	font-size: 16px;
 }
 
-.slider-slide .slider-button {
+.button {
 	font-weight: medium;
 	color: #ffffff;
 
 	background-color: #fb565a;
 }
 
-.slider-slide .slider-button:hover,
-.slider-slide .slider-button:focus {
+.button:hover,
+.button:focus {
 	background-color: #e74246;
 }
 
-.slider-slide .slider-button:active {
+.button:active {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #d7373b;
@@ -270,26 +271,6 @@ a {
 	color: #666666;
 }
 
-.main-footer .footer-button-form {
-	color: #ffffff;
-	text-transform: uppercase;
-
-	background-color: #fb565a;
-}
-
-/*В styleguide не прописаны стили при наведении
- и нажатии, но по логике должны быть такие же, как в кнопках?*/
-.main-footer .footer-button-form:hover,
-.main-footer .footer-button-form:focus {
-	background-color: #e74246;
-}
-
-.main-footer .footer-button-form:active {
-	color: rgba(255, 255, 255, 0.3);
-
-	background-color: #d7373b;
-}
-
 .footer-social .footer-social-list {
 	list-style: none;
 }
@@ -305,3 +286,48 @@ a {
 .tooter-social p {
 	color: #444444;
 }
+
+/*Форма "Напишите нам"*/
+.form-feedback input {
+	font: inherit;
+	color: #444444;
+
+	background-color: transparent;
+	border: 2px solid #d7dcde;
+}
+
+.form-feedback input:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.form-feedback input:focus {
+	border: 2px solid #000000;
+}
+
+.form-feedback label {
+	font: inherit;
+
+	background-color: transparent;
+}
+
+.form-feedback textarea {
+	font: inherit;
+	color: #444444;
+
+	background-color: transparent;
+	border: 2px solid #d7dcde;
+}
+
+.form-feedback textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.form-feedback textarea:focus {
+	border: 2px solid #000000;
+}
+
+.form-feedback .button {
+	text-transform: uppercase;
+}
+/*Вопрос: невалидное значение формы, что это за состояние?*/
+/*Конец кода формы "Напишите нам*/
