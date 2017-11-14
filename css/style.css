@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src:
+      url("fonts/roboto.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src:
+      url("fonts/robotobold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src:
+      url("fonts/robotomedium.woff2") format("woff2");
+}
+      
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+
+.main-navigation {
+	font-size: 16px;
+	color: #000000;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.cart a {
+	font-weight: medium;
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart a:hover,
+.cart a:focus {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.cart a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+	background-color: #eeeeee;
+}
+
+.slider-slide .slider-text {
+	font-size: 55px;
+	font-weight: medium;
+}
+
+.slider-slide .slider-description {
+	font-size: 16px;
+}
+
+.slider-slide .slider-button {
+	font-weight: medium;
+	color: #ffffff;
+
+	background-color: #fb565a;
+}
+
+.slider-slide .slider-button:hover,
+.slider-slide .slider-button:focus {
+	background-color: #e74246;
+}
+
+.slider-slide .slider-button:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #d7373b;
+}
+
+.service-list {
+	list-style: none;
+}
+
+.service-item {
+	text-align: left;
+}
+
+.service-item .service-title {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.service-item .order-site {
+	font-weight: medium;
+	color: #ffffff;
+
+	background-color: #fb565a;
+}
+
+.service-item .order-site:hover,
+.service-item .order-site:focus {
+	background-color: #e74246;
+}
+
+.service-item .order-site:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #d7373b;
+}
+
+.service-item .order-application {
+	font-weight: medium;
+	color: #ffffff;
+
+	background-color: #00ca74;
+	
+}
+
+.service-item .order-application:hover,
+.service-item .order-application:focus {
+	background-color: #00bc6c;
+}
+
+.service-item .order-application:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #00aa62;	
+}
+
+.service-item .order-presentation {
+	font-weight: medium;
+	color: #ffffff;
+
+	background-color: #efc84a;	
+}
+
+.service-item .order-presentation:hover,
+.service-item .order-presentation:focus {
+	background-color: #eab534;
+}
+
+.service-item .order-presentation:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #e5a722;
+}
+
+.about-features .about-features-text {
+	font-weight: medium;
+	font-size: 45px;
+}
+
+.about-features .about-features-title {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.about-features .about-features-list {
+	list-style: none;
+}
+
+.about-content .about-features-title {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.about-table tr:first-child td {
+	font-size: 45px;
+}
+
+.customers-list {
+	list-style: none;
+}
+
+.customers-item {
+	opacity: 0.2;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+	opacity: 1;
+}
+
+.customers-item:active {
+	opacity: 0.1;
+}
+
+.main-footer .footer-title {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.main-footer .footer-adress p {
+	color: #666666;
+}
+
+.main-footer .footer-button-form {
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+}
+
+/*В styleguide не прописаны стили при наведении
+ и нажатии, но по логике должны быть такие же, как в кнопках?*/
+.main-footer .footer-button-form:hover,
+.main-footer .footer-button-form:focus {
+	background-color: #e74246;
+}
+
+.main-footer .footer-button-form:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #d7373b;
+}
+
+.footer-social .footer-social-list {
+	list-style: none;
+}
+
+.footer-social .footer-social-icon {
+	color: #ffffff;
+}
+
+.footer-social b {
+	font-size: 36px;
+}
+
+.tooter-social p {
+	color: #444444;
+}

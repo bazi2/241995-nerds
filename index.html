@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Веб-студия Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
@@ -29,7 +31,7 @@
           <div class="slider-controls">
             <!-- Здесь будут управляющие элементы слайдера -->
           </div>
-          <div class="slider-slide">
+          <div class="slider-slide slide1">
             <section class="slider-content">
               <h2 class="visually-hidden">Промо заголовок</h2>
               <p class="slider-text">Долго, дорого, скрупулезно.</p>
@@ -37,7 +39,7 @@
               <a class="button slider-button" href="about-us.html">Узнать больше</a>
             </section>
           </div> 
-          <div class="slider-slide">
+          <div class="slider-slide slide2">
             <section class="slider-content">
               <h2 class="visually-hidden">Промо заголовок</h2>
               <p class="slider-text">Любим математику как никто другой</p>
@@ -45,7 +47,7 @@
               <a class="button slider-button" href="about-us.html">Узнать больше</a>
             </section>
           </div> 
-          <div class="slider-slide">
+          <div class="slider-slide slide3">
             <section class="slider-content">
               <h2 class="visually-hidden">Промо заголовок</h2>
               <p class="slider-text">Только ночь, только хардкор</p>
@@ -61,21 +63,21 @@
   			<ul class="service-list">
   				<li class="service-item">
   					<h3 class="service-title">Веб-сайты</h3>
-  					<div class="service-icon"></div>
+  					<div class="service-icon service-icon-site"></div>
   					<p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<a class="service-order" href="#">Заказать</a>
+  					<a class="service-order order-site" href="#">Заказать</a>
   				</li>
   				<li class="service-item">
   					<h3 class="service-title">Приложения</h3>
-  					<div class="service-icon"></div>
+  					<div class="service-icon service-icon-application"></div>
   					<p class="service-text">Покорите топ-10 приложен  ий в AppStore и Google Play</p>
-  					<a class="service-order" href="#">Заказать</a>
+  					<a class="service-order order-application" href="#">Заказать</a>
   				</li>
   				<li class="service-item">
   					<h3 class="service-title">Презентации</h3>
-  					<div class="service-icon"></div>
+  					<div class="service-icon service-icon-presentation"></div>
   					<p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a class="service-order" href="#">Заказать</a>
+  					<a class="service-order order-presentation" href="#">Заказать</a>
   				</li>
   			</ul>
   		</section>
@@ -98,9 +100,9 @@
   				<p class="about-features-title">С 2004 года любим точность во всем:</p>
   				<table class="about-table">
   					<tr>
-  						<td>146%</td>
-  						<td>100%</td>
-  						<td>50%</td>
+  						<td>146<sup>%</sup></td>
+  						<td>100<sup>%</sup></td>
+  						<td>50<sup>%</sup></td>
   					</tr>
   					<tr>
   						<td>Уровень самоотдачи</td>
@@ -161,7 +163,7 @@
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-  			<ul>
+  			<ul class="footer-social-list">
   				<li><a class="footer-social-icon social-icon-vk" href="#">Вконтакте</a></li>
   				<li><a class="footer-social-icon social-icon-fb" href="#">Фэйсбук</a></li>
   				<li><a class="footer-social-icon social-icon-inst" href="#">Инстаграм</a></li>
