@@ -73,6 +73,53 @@ a {
 	background-color: #eeeeee;
 }
 
+/*Фон для слайдов. Размеры и отступы потом поправить. Писала примерно*/
+.slider-content {
+	width: 519px;
+}
+
+.slider-slide {
+	position: relative;
+	z-index: 10;
+}
+
+.slider-container .slide1::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 425px;
+	width: 698px;
+	height: 413px;
+	background-image: url("../img/slide1.png");
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.slider-container .slide2::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 425px;
+	width: 663px;
+	height: 430px;
+	background-image: url("../img/slide2.png");
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.slider-container .slide3::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 425px;
+	width: 659px;
+	height: 411px;
+	background-image: url("../img/slide3.png");
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+/*Конец кода фона для слайдов*/
+
 .slider-slide .slider-text {
 	font-size: 55px;
 	font-weight: medium;
@@ -107,6 +154,12 @@ a {
 .service-item {
 	text-align: left;
 }
+
+/*Фоны иконок для услуг*/
+.service-item {
+
+}
+/*Конец кода для фона иконок*/
 
 .service-item .service-title {
 	font-size: 24px;
