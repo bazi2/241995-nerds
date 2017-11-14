@@ -157,7 +157,23 @@ a {
 }
 
 /*Фоны иконок для услуг*/
-.service-item {
+.service-icon {
+	width: 300px;
+	height: 146px;
+}
+
+.service-icon-site {
+	background-image: url("../img/service-icon-1.png");
+
+}
+
+.service-icon-application {
+	background-image: url("../img/service-icon-2.png");
+
+}
+
+.service-icon-presentation {
+	background-image: url("../img/service-icon-3.png");
 
 }
 /*Конец кода для фона иконок*/
