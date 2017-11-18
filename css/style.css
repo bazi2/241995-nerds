@@ -3,7 +3,8 @@
   font-style: normal;
   font-weight: normal;
   src:
-      url("fonts/roboto.woff2") format("woff2");
+      url("../fonts/roboto.woff2") format("woff2"),
+      url("../fonts/roboto.woff") format("woff");
 }
 
 @font-face {
@@ -11,15 +12,17 @@
   font-style: normal;
   font-weight: bold;
   src:
-      url("fonts/robotobold.woff2") format("woff2");
+      url("../fonts/robotobold.woff2") format("woff2"),
+      url("../fonts/robotobold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: medium;
+  font-weight: 500;
   src:
-      url("fonts/robotomedium.woff2") format("woff2");
+      url("../fonts/robotomedium.woff2") format("woff2"),
+      url("../fonts/robotomedium.woff") format("woff");
 }
       
 html,
@@ -27,7 +30,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -45,7 +48,7 @@ a {
 }
 
 .main-navigation {
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 30px;
 	color: #000000;
@@ -57,7 +60,7 @@ a {
 
 .site-navigation a,
 .cart a {
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 }
 
@@ -97,18 +100,20 @@ a {
 .slider-slide .slider-text {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: medium;
+	font-weight: 500;
 }
 
 .slider-slide .slider-description {
 	font-size: 16px;
 	line-height: 24px;
+
+	color: #283136;
 }
 
 .button {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #ffffff;
 
 	background-color: #fb565a;
@@ -140,9 +145,13 @@ a {
 	text-transform: uppercase;
 }
 
+.service-item .service-text {
+	color: #283136;
+}
+
 .service-item .service-order {
 	line-height: 18px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #ffffff;
 }
 
@@ -193,9 +202,13 @@ a {
 }
 
 .about-features .about-features-text {
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
+}
+
+.about-features .about-features-description {
+	color: #283136;
 }
 
 .about-features .about-features-title {
@@ -205,6 +218,10 @@ a {
 
 .about-features .about-features-list {
 	list-style: none;
+}
+
+.about-features-list .about-features-item {
+	color: #283136;
 }
 
 .about-content .about-features-title {
@@ -219,6 +236,7 @@ a {
 
 .about-table tr:last-child td {
 	font-size: 18px;
+	color: #283136;
 }
 
 
@@ -250,7 +268,7 @@ a {
 .catalog-page-title {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: medium;
+	font-weight: 500;
 }
 
 .filter-form fieldset {
@@ -268,7 +286,7 @@ a {
 	list-style: none;
 }
 
-.filter-form-option label {
+.filter-input + label {
 	font: inherit;
 	line-height: 20px;
 	color: #283136;
@@ -285,7 +303,7 @@ a {
 }
 
 .filter-form .filter-form-button {
-	font-weight: medium;
+	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #000000;
@@ -329,6 +347,13 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+
+
+/* Скрою, когда задам все стили макету
+.product .product-card {
+	display: none;
+}
+*/
 .product .product-title a {
 	line-height: 30px;
 	font-weight: bold;
@@ -356,7 +381,7 @@ a {
 
 .product-pagination a {
 	line-height: 18px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 
@@ -419,7 +444,7 @@ a {
 .modal-contacts-form .modal-contacts-title {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: medium;
+	font-weight: 500;
 }
 
 .form-feedback input {
@@ -465,7 +490,7 @@ a {
 }
 
 .form-feedback .button {
-	font-weight: medium;
+	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
 	border: none;
