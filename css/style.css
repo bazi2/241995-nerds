@@ -503,5 +503,216 @@ a {
 	text-transform: uppercase;
 	border: none;
 }
-/*Вопрос: невалидное значение формы, что это за состояние?*/
-/*Конец кода формы "Напишите нам*/
+
+/*----- Сеточные стили -------*/
+
+
+html,
+body {
+	min-width: 1440px;
+	min-height: 2476px;
+}
+
+body {
+	/* Временно для сетки  */
+	background-image: url("../img/nerds-index.jpg");
+	background-size: 1440px auto;
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.main-header {
+	padding-top: 50px;
+
+	/* Временно для сетки */	
+	background-color: rgba(0, 128, 0, 0.2);
+}
+
+.main-navigation {
+	display: flex;
+
+	/* Временно для сетки */
+	min-height: 80px;
+	outline: 2px solid red;
+}
+
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+
+	/*Временно для сетки*/
+	display: block;
+	outline: 2px solid yellow;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+	margin-left: 100px;
+	width: 700px;
+
+	list-style: none;
+
+	/*Временно для сетки*/
+	min-height: 80px;
+	outline: 2px solid yellow;
+}
+
+.cart {
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	width: 160px;
+
+	/*Временно для сетки*/
+	min-height: 80px;
+	outline: 2px solid yellow;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	/*Временно для сетки*/
+	outline: 2px solid blue;
+}
+
+.slider {
+	/*Временно для сетки*/
+	min-height: 415px;
+	background-color: rgba(0, 255, 175, 0.2);
+	outline: 2px solid red;
+}
+
+.service {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	/*Временно для сетки*/
+	background-color: rgba(0, 255, 175, 0.2);
+	outline: 2px solid red;
+	min-height: 347px;
+}
+
+.service-list {
+	display: flex;
+	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	*Временно для сетки*/
+	outline: 2px solid red;
+}
+
+.service-item {
+	width: 300px;
+	margin-right: 100px;
+
+	/*Временно для сетки*/
+	min-height: 350px;
+	outline: 2px solid yellow;
+}
+
+.servece-item:last-child {
+	margin-right: 0;
+}
+
+.about {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 80px;
+
+	/*Временно для сетки*/
+	outline: 2px solid green;
+}
+
+.about-features {
+	width: 700px;
+	/*Временно для сетки*/
+	min-height: 405px;
+	outline: 2px solid red;
+}
+
+.about-content {
+	width: 400px;
+
+	/*Временно для сетки*/
+	min-height: 405px;
+	outline: 2px solid red;
+}
+
+.customers {
+	padding: 45px 0;
+
+	/*Временно для сетки*/
+	min-height: 90px;
+	outline: 2px solid green;
+}
+
+.customers-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	/*Временно для сетки*/
+	outline: 2px solid red;
+	min-height: 90px;
+}
+
+.customers-logo {
+	/*Временно для сетки*/
+	width: 260px;
+	min-height: 90px;
+	outline: 2px solid black;
+}
+
+.main-footer {
+	margin-top: 80px;
+
+	/*Временно для сетки*/
+	min-height: 635px;
+	outline: 2px solid green;
+}
+
+.footer-map {
+	/* Временно для сетки*/
+	min-height: 416px;
+	outline: 2px solid red;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: space-between;
+	padding: 70px 0;
+
+	/*Временно для сетки*/
+	outline: 2px solid red;
+	min-height: 77px;
+}
+
+.footer-social-wrapper {
+	width: 760px;
+
+	/*Временно для сетки*/
+	outline: 2px solid black;
+	min-height: 77px;
+}
+
+.footer-social-list {
+	width: 260px;
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	order: -1;
+
+	/*Временно для сетки*/
+	outline: 2px solid black;
+	min-height: 77px;
+}
