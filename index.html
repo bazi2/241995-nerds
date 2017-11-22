@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a class="main-header-logo">
-  				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии Нёрдс">
-  			</a>
-  			<ul class="site-navigation">
-  				<li><a href="studio.html">Студия</a></li>
-  				<li><a href="customers.html">Клиенты</a></li>
-  				<li><a href="catalog.html">Магазин</a></li>
-  				<li><a href="contacts.html">Контакты</a></li>
-  			</ul>
-        <p class="cart">
-  			  <a href="cart.html">Корзина</a>
-        </p>
-  		</nav>
-    </header>		
-  	
-  	<main class="container">
-        <section class="slider">
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии Нёрдс">    
+          </a>
+          <ul class="site-navigation">
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="customers.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>    
+          </ul>
+          <p class="cart">
+            <a href="cart.html">Корзина</a>    
+          </p>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="slider">
         <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
         <div class="slider-container">
           <ul class="slides-controls">
@@ -73,122 +75,126 @@
         </div>
       </section>
 
-  		<section class="service">
-  			<h2 class="visually-hidden">Услуги</h2>
-  			<ul class="service-list">
-  				<li class="service-item">
+      <section class="service">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="service-list">
+          <li class="service-item">
             <img class="service-img service-img-site" src="img/service-icon-1.png" alt="Разработка веб-сайтов студией Нёрдс" width="300" height="146">
-  					<h3 class="service-title">Веб-сайты</h3>  					
-  					<p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<a class="service-order order-site" href="#">Заказать</a>
-  				</li>
-  				<li class="service-item">
-            <img class="service-img service-img-application" src="img/service-icon-2.png" alt="Разработка веб-приложений студией Нёрдс" width="300" height="146">
-  					<h3 class="service-title">Приложения</h3>
-  					<p class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<a class="service-order order-application" href="#">Заказать</a>
-  				</li>
-  				<li class="service-item">
+            <h3 class="service-title">Веб-сайты</h3>            
+            <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="service-order order-site" href="#">Заказать</a>    
+          </li>
+          <li class="service-item">
+             <img class="service-img service-img-application" src="img/service-icon-2.png" alt="Разработка веб-приложений студией Нёрдс" width="300" height="146">
+            <h3 class="service-title">Приложения</h3>
+            <p class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="service-order order-application" href="#">Заказать</a>    
+          </li>
+          <li class="service-item">
             <img class="service-img service-img-presentation" src="img/service-icon-3.png" alt="Разработка презентаций студией Нёрдс" width="300" height="146">
-  					<h3 class="service-title">Презентации</h3>
-  					<p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a class="service-order order-presentation" href="#">Заказать</a>
-  				</li>
-  			</ul>
-  		</section>
+            <h3 class="service-title">Презентации</h3>
+            <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="service-order order-presentation" href="#">Заказать</a>    
+          </li>
+        </ul>
+      </section>
 
-  		<section class="about">
-  			<h2 class="visually-hidden">О веб-студии Нёрдс</h2>
-  			<section class="about-features">
-  				<p class="about-features-text">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-  				<p class="about-features-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-  				<h3 class="about-features-title">Выполняем заказы на разработку:</h3>
-  				<ul class="about-features-list">
-  					<li class="about-features-item">Веб-сайтов любой сложности</li>
-  					<li class="about-features-item">Мобильных приложений для iOS и Android</li>
-  					<li class="about-features-item">Слайдшоу и видео для корпоративных презентаций</li>
-  				</ul>
-  			</section>
-  			<section class="about-content">
-  				<h3 class="visually-hidden">О студии в цифрах</h3>
-  				<img class="about-content-logo" src="img/nerds-logo.png" width="360" height="208" alt="Логотип веб-студии Нёрдс">
-  				<p class="about-features-title">С 2004 года любим точность во всем:</p>
-  				<table class="about-table">
-  					<tr>
-  						<td>146<sup>%</sup></td>
-  						<td>100<sup>%</sup></td>
-  						<td>50<sup>%</sup></td>
-  					</tr>
-  					<tr>
-  						<td>Уровень самоотдачи</td>
-  						<td>Соблюдение сроков</td>
-  						<td>Минимальная предоплата</td>
-  					</tr>
-  				</table>
-  			</section>
-  		</section>
+      <section class="about">
+        <h2 class="visually-hidden">О веб-студии Нёрдс</h2>
+        <section class="about-features">
+          <p class="about-features-text">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="about-features-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="about-features-title">Выполняем заказы на разработку:</h3>
+          <ul class="about-features-list">
+            <li class="about-features-item">Веб-сайтов любой сложности</li>
+            <li class="about-features-item">Мобильных приложений для iOS и Android</li>
+            <li class="about-features-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="about-content">
+          <h3 class="visually-hidden">О студии в цифрах</h3>
+          <img class="about-content-logo" src="img/nerds-logo.png" width="360" height="208" alt="Логотип веб-студии Нёрдс">
+          <p class="about-features-title">С 2004 года любим точность во всем:</p>
+          <table class="about-table">
+            <tr>
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </section>
+      </section>
 
-  		<section class="customers">
-  			<h2 class="visually-hidden">Клиенты</h2>
-  			<ul class="customers-list">
-  				<li class="customers-logo">
+      <section class="customers">
+        <h2 class="visually-hidden">Клиенты</h2>
+        <ul class="customers-list">
+          <li class="customers-logo">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-  					 <img class="customers-item" src="img/logo-1.png" width="199" height="68" alt="Логотип компании HTML Academy">
-            </a>
-  				</li>
-  				<li class="customers-logo">
+             <img class="customers-item" src="img/logo-1.png" width="199" height="68" alt="Логотип компании HTML Academy">
+            </a>    
+          </li>
+          <li class="customers-logo">
             <a href="#">
-  					 <img class="customers-item" src="img/logo-2.png" width="209" height="90" alt="Логотип компании Барбершоп «Бородинский»">
-            </a>
-  				</li>
-  				<li class="customers-logo">
+             <img class="customers-item" src="img/logo-2.png" width="209" height="90" alt="Логотип компании Барбершоп «Бородинский»">
+            </a>    
+          </li>
+          <li class="customers-logo">
             <a href="#">
-  					 <img class="customers-item" src="img/logo-3.png" width="185" height="52" alt="Логотип компании Pink">
-            </a>
-  				</li>
-  				<li class="customers-logo">
+             <img class="customers-item" src="img/logo-3.png" width="185" height="52" alt="Логотип компании Pink">
+            </a>    
+          </li>
+          <li class="customers-logo">
             <a href="#">
-  					 <img class="customers-item" src="img/logo-4.png" width="173" height="84" alt="Логотип компании Mishka">
-            </a>
-  				</li>
-  			</ul>
-  		</section>
-  	</main>
+             <img class="customers-item" src="img/logo-4.png" width="173" height="84" alt="Логотип компании Mishka">
+            </a>    
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  	<footer class="main-footer">
-  		<section class="footer-contacts">
-  			<h2 class="visually-hidden">Контакты</h2>
-  			<div class="footer-adress">
-  				<h3 class="footer-title">Nёrds design studio</h3>
-  				<p>
-  					191186, Санкт-Петербург,
-  					ул. Б.  Конюшенная, д.19/8
-  				</p>
-  				<p>
-  					тел. +7 (812) 275-75-75
-  				</p>
-  				<a class="button footer-button-form" href="#">Напишите нам</a>
-  			</div>
-  			<div class="footer-map">
-  				<img class="footer-contacts-map" src="img/map.jpg" width="1440" height="416" alt="Как пройти в офис веб-студии Нёрдс">
-  			</div>
-  		</section>
-
-  		<section class="footer-social">
-        <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-  			<ul class="footer-social-list">
-  				<li><a class="footer-social-icon social-icon-vk" href="#">Вконтакте</a></li>
-  				<li><a class="footer-social-icon social-icon-fb" href="#">Фэйсбук</a></li>
-  				<li><a class="footer-social-icon social-icon-inst" href="#">Инстаграм</a></li>
-  			</ul>
-  		</section>
-  	</footer>
-
-  	<section class="modal-contacts-form">
-  		<h2 class="modal-contacts-title">Напишите нам</h2>
-  		<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="footer-adress">
+            <h3 class="footer-title">Nёrds design studio</h3>
+            <p>
+              191186, Санкт-Петербург,
+              ул. Б.  Конюшенная, д.19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="button footer-button-form" href="#">Напишите нам</a>
+          </div>
+          <div class="footer-map">
+            <img class="footer-contacts-map" src="img/map.jpg" width="1440" height="416" alt="Как пройти в офис веб-студии Нёрдс">
+          </div>
+        </section>
+        <section class="footer-social">
+          <h3 class="visually-hidden">Мы в социальных сетях</h3>
+          <!-- Добавляю обертку для текстового блока: "Давайте... + Скидка..." -->
+          <div class="footer-social-wrapper">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p> 
+          </div>
+          
+          <ul class="footer-social-list">
+            <li><a class="footer-social-icon social-icon-vk" href="#">Вконтакте</a></li>
+            <li><a class="footer-social-icon social-icon-fb" href="#">Фэйсбук</a></li>
+            <li><a class="footer-social-icon social-icon-inst" href="#">Инстаграм</a></li>
+          </ul> 
+        </section>
+      </div>
+    </footer>
+    <section class="modal-contacts-form">
+      <h2 class="modal-contacts-title">Напишите нам</h2>
+      <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="field-name">Ваше имя:</label><br>
           <input id="field-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
@@ -203,7 +209,7 @@
         </p>
         <button class="button" type="submit">Отправить</button>        
       </form>
-  		<button class="modal-close" type="button">Закрыть</button>
-  	</section>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>

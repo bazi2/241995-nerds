@@ -513,21 +513,6 @@ body {
 	min-height: 2476px;
 }
 
-body {
-	/* Временно для сетки  */
-	background-image: url("../img/nerds-index.jpg");
-	background-size: 1440px auto;
-	background-repeat: no-repeat;
-	background-position: top center;
-}
-
-.inner-page {
-	/*Временно для сетки*/
-	background-image: url("../img/nerds-catalog.jpg");
-	background-size: 1440px auto;
-	background-position: top center;
-	background-repeat: no-repeat;
-}
 
 .main-header {
 	padding-top: 50px;
@@ -556,8 +541,8 @@ body {
 .site-navigation {
 	margin: 0;
 	padding: 0;
-	margin-left: 100px;
-	width: 700px;
+	margin-left: 175px;
+	width: 500px;
 
 	list-style: none;
 
@@ -588,8 +573,8 @@ body {
 
 .slider {
 	/*Временно для сетки*/
+	/*Нерешила вопрос с фоном: серый фон должен тянуться на весь экран. А сейчас его ограничивает контейнер-центровщик*/
 	min-height: 415px;
-	background-color: rgba(0, 255, 175, 0.2);
 	outline: 2px solid red;
 }
 
@@ -605,7 +590,6 @@ body {
 
 .service-list {
 	display: flex;
-
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -615,9 +599,9 @@ body {
 }
 
 .service-item {
-	width: 300px;
+	flex-shrink: 0;
+	width: 300px;	
 	margin-right: 100px;
-
 	/*Временно для сетки*/
 	min-height: 350px;
 	outline: 2px solid yellow;
@@ -682,6 +666,7 @@ body {
 
 /*Стили для внутренней страницы основное содержимое*/
 
+/*Нерешила вопрос с фоном: серый фон должен тянуться на весь экран. А сейчас его ограничивает контейнер-центровщик. Тоже самое с картой в подвале*/
 .catalog-page-title {
 	margin: 0;
 	padding: 0;
@@ -737,9 +722,9 @@ body {
 	min-height: 1915px;
 }
 
+/*ВОПРОС: Когда добавила содержимое в разметку сетки, отступы снизу (35 пикселей, которые фактически не задавала, а сделала распределение по поперечной оси и падинги контейнеру) пропали. Это из-за того, что задана минимальная ширина и в разметке появилось описание товара (им не хватает места, когда их скрою все встанет на свои места) или у меня ошибка?*/
 .catalog-products .product {
 	width: 360px;
-
 	/*Временно для сетки*/
 	min-height: 615px;
 	outline: 2px solid black;
