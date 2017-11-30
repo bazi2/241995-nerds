@@ -571,10 +571,13 @@ input[type="radio"].visually-hedden {
 	opacity: 0.1;
 }
 
-
-
 /*Разметка страницы Каталог*/
 .catalog-page-title {
+	margin: 0;
+	padding: 0;
+	padding-top: 63px;
+	padding-bottom: 110px;
+
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
@@ -583,12 +586,33 @@ input[type="radio"].visually-hedden {
 	background-color: #eeeeee;
 }
 
+.inner-page-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 59px;
+	padding-bottom: 60px;
+}
+
+.inner-page-wrapper .catalog-filters {
+	width: 300px;
+}
+
+.inner-page-wrapper .catalog {
+	width: 760px;
+	
+}
+
 /*Разметка сложной формы по скринкасту*/
 .filter-item {
   margin: 0;
   padding: 0;
+  margin-bottom: 45px;
   
   border: none;
+}
+
+.filter .filter-item:first-child {
+  margin-bottom: 55px;
 }
 
 .range-filter {
@@ -688,6 +712,8 @@ input[type="radio"].visually-hedden {
 /*Конец кода сложной формы по скринкасту*/
 
 .filter-form legend {
+	margin-bottom: 17px;
+
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
@@ -695,7 +721,23 @@ input[type="radio"].visually-hedden {
 }
 
 .filter-form ul {
+	padding: 0;
+  	margin: 0;
+
 	list-style: none;
+}
+
+.filter-form-option {
+	margin-bottom: 24px;
+	padding-left: 37px;
+}
+
+.filter-form-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;	
 }
 
 .filter-input + label {
@@ -712,6 +754,63 @@ input[type="radio"].visually-hedden {
 .filter-input:disabled + label {
 	color: #283136;
 	opacity: 0.3;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+
+  left: -36px;
+  top: -1px;
+
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid #a6a6a6;
+  border-radius: 2px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -35px;
+
+  width: 23px;
+  height: 23px;
+ 
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  top: -5px;
+  left: -38px;
+
+  width: 21px;
+  height: 21px;
+  
+  border: 4px solid #a6a6a6;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: -28px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #a6a6a6;
+  border-radius: 50%;
 }
 
 .filter-form .filter-form-button {
@@ -735,18 +834,45 @@ input[type="radio"].visually-hedden {
 	background-color: #d5d5d5;
 }
 
-.catalog-sort ul {
-	list-style: none;
+.catalog .catalog-sort {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 55px;
 }
 
 .catalog-sort p {
+	margin: 0;
+	padding: 0;
+	width: 360px;
+}
+
+.catalog-sort ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-sort p {
+	margin-right: 40px;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
+.catalog-sort .sort-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 280px;
+	margin-right: 20px;
+	
+}
+
 .catalog-sort .sort-cost {
+	margin-right: 27px;
 	font-size: 14px;
 	line-height: 18px;
 	color: #000000;
@@ -759,23 +885,93 @@ input[type="radio"].visually-hedden {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog-sort .sort-type {
+	margin-right: 27px;
+}
 
+.sort-list-arrow {
+	display: flex;
+	justify-content: flex-end;
+	
+	width: 60px;
+}
 
-/* Скрою, когда задам все стили макету
+.sort-arrow-down::before {
+	display: block;
+	content: "";
+
+	border: 9px solid #010101;
+	border-bottom-width: 0;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+    cursor: pointer;
+}
+
+.sort-arrow-up::before {
+	display: block;
+	content: "";
+	margin-left: 17px;
+
+	border: 9px solid #a6a6a6;
+	border-top-width: 0;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+    cursor: pointer;
+}
+
+.catalog-products-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+	margin-bottom: 60px;
+	/*Временно для сетки*/
+	min-height: 1915px;
+}
+
+.catalog-products-wrapper .product {
+	position: relative;
+	width: 360px;
+}
+
 .product .product-card {
 	display: none;
+	position: absolute;
+	bottom: 0;
+	width: 202px;
+	padding: 30px 80px 45px 80px;
+
+	background-color: #eeeeee;
 }
-*/
-.product-title a {
+
+.product-card .product-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 28px;
+
+	text-align: center;
+}
+
+.product-card .product-title a {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 	color: #000000;
 }
 
-.product .product-text {
+.product-card .product-text {
+	margin-bottom: 32px;
+
+	text-align: center;
 	line-height: 18px;
 	color: #666666;
+}
+
+.product-card .product-button {
+	width: 200px;
 }
 
 .product img {
@@ -788,27 +984,70 @@ input[type="radio"].visually-hedden {
 	box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
+.product:hover .product-card {
+	display: block;
+} 
+
+.product::before {
+	content: "";
+	position: absolute;
+	top: -42px;
+	left: 1px;
+	width: 360px;
+	height: 43px;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+	background-color: #e9e9e9;
+}
+
+.product:hover .product::before {
+	background-color: #4d4d4d;
+} 
+
 .product-pagination {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+
 	list-style: none;
 }
 
+.pagination-item {
+	margin-right: 10px;
+}
+
+.pagination-item:last-child {
+	margin-right: 0;
+}
+
 .product-pagination a {
+	display: block;
+	padding: 15px 20px;
+
 	line-height: 18px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 
 	background-color: #eeeeee;
+	border: 3px solid #eeeeee;
+	border-radius: 3px;
 }
 
 .product-pagination a:hover,
 .product-pagination a:focus {
 	background-color: #dfdfdf;
+	border: 3px solid #dbdbdb;
 }
 
 .product-pagination a:active {
 	opacity: 0.3;
 	background-color: #d5d5d5;
+	border: 3px solid #d5d5d5;
+	border-top: rgba(191, 191, 191, 0.1);
 }
 
 .product-pagination .pagination-current {
@@ -1061,87 +1300,6 @@ input[type="radio"].visually-hedden {
 
 
 
-
-
-
-
-
-/*Стили для внутренней страницы основное содержимое*/
-
-
-.catalog-page-title {
-	margin: 0;
-	padding: 0;
-	padding-top: 63px;
-	padding-bottom: 110px;
-
-	/*Временно для сетки*/
-	outline: 2px solid red;
-}
-
-.inner-page-wrapper {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 59px;
-	padding-bottom: 60px;
-
-	/*Временно для сетки*/
-	outline: 2px solid red;
-	min-height: 2101px;
-}
-
-.inner-page-wrapper .catalog-filters {
-	width: 300px;
-
-	/*Временно для сетки*/
-	outline: 2px solid green;
-	min-height: 800px;
-}
-
-.inner-page-wrapper .catalog {
-	width: 760px;
-
-	/*Временно для сетки*/
-	outline: 2px solid green;
-	
-}
-
-.catalog .catalog-sort {
-	margin-bottom: 55px;
-	/*Временно для сетки*/
-	min-height: 18px;
-	outline: 2px solid yellow;
-}
-
-.catalog-products-wrapper {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-content: space-between;
-
-	margin-bottom: 60px;
-	/*Временно для сетки*/
-	min-height: 1915px;
-}
-
-/*ВОПРОС: Когда добавила содержимое в разметку сетки, отступы снизу (35 пикселей, которые фактически не задавала, а сделала распределение по поперечной оси и падинги контейнеру) пропали. Это из-за того, что задана минимальная ширина и в разметке появилось описание товара (им не хватает места, когда их скрою все встанет на свои места) или у меня ошибка?*/
-.catalog-products .product {
-	width: 360px;
-	/*Временно для сетки*/
-	min-height: 615px;
-	outline: 2px solid black;
-}
-
-.catalog-products .product-pagination {
-	padding: 0;
-	margin: 0;
-
-	list-style: none;
-
-	/*Временно для сетки*/
-	min-height: 50px;
-	outline: 2px solid black;
-}
 
 
 
