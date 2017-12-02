@@ -112,7 +112,7 @@ input[type="radio"].visually-hedden {
 	margin: 0;
 	padding: 0;
 	margin-left: 175px;
-	width: 500px;
+	width: 560px;
 
 	list-style: none;
 }
@@ -120,8 +120,7 @@ input[type="radio"].visually-hedden {
 .site-navigation a,
 .cart a {
 	display: block;
-	margin-right: 45px;
-	padding-top: 25px;
+	padding: 25px;
 	padding-bottom: 13px;
 	font-weight: 500;
 	color: #000000;
@@ -427,7 +426,7 @@ input[type="radio"].visually-hedden {
 
 .about {	
 	padding-top: 40px;
-	padding-bottom: 75px;
+	padding-bottom: 70px;
 
 	border-bottom: 2px solid #eeeeee;
 }
@@ -512,7 +511,7 @@ input[type="radio"].visually-hedden {
 }
 
 .about-table td {
-	padding: 10px 0;
+	padding: 15px 10px;
 }
 
 .about-table tr:first-child td {
@@ -521,7 +520,7 @@ input[type="radio"].visually-hedden {
 }
 
 .about-table tr:last-child td {
-	font-size: 18px;
+	font-size: 16px;
 	color: #283136;
 }
 
@@ -556,6 +555,10 @@ input[type="radio"].visually-hedden {
 	width: 2px;
 	height: 52px;
 	background-color: #eeeeee;
+}
+
+.customers-logo:first-child::after {
+	display: none;
 }
 
 .customers-item {
@@ -1116,6 +1119,8 @@ input[type="radio"].visually-hedden {
 }
 
 .footer-adress p {
+	padding-right: 18px;
+
 	line-height: 18px;
 	color: #666666;
 }
@@ -1167,13 +1172,12 @@ input[type="radio"].visually-hedden {
 }
 
 .footer-social-icon:active {
-	background-color: #d7373b;
+	background-color: #d7373b;	
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-/*ВОПРОС: при нажатии на иконку значки становятся прозрачными - 0.3 чему прописывать opacity?*/
-.footer-social-icon:active path {
-	fill: #d7373b;
-	box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+.footer-social-icon .active:active {
+	fill-opacity: 0.3;
 }
 
 .footer-social-wrapper b {
@@ -1197,11 +1201,67 @@ input[type="radio"].visually-hedden {
 /*Форма "Напишите нам"*/
 
 .modal-contacts-form {
+	display: none;
+	
+	position: fixed;
+	bottom: 180px;
+	left: 50%;
+	margin-left: -480px;
 	width: 760px;
-	padding: 75px 100px 85px 100px;
+	padding: 75px 100px 84px 100px;
 
 	background-color: #ffffff;
 	box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.modal-close {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+	width: 22px;
+	height: 22px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: 0;
+
+	cursor: pointer;
+	outline: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+
+	position: absolute;
+	top: 10px;
+	left: 2px;
+
+	width: 19px;
+	height: 3px;
+
+	background-color: #fecccd;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after,
+.modal-close:focus::before,
+.modal-close:focus::after {
+	background-color: #fb565a;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+	background-color: #ffeeee;
 }
 
 .modal-contacts-form .modal-contacts-title {
@@ -1220,14 +1280,13 @@ input[type="radio"].visually-hedden {
 }
 
 .form-container .form-item {
-	width: 326px;
 	margin: 0;
 	padding: 0;
 }
 
 .form-feedback input {
-	
-	padding: 15px;
+	width: 327px;
+	padding: 15px 15px 13px 14px;
 	margin-bottom: 34px;
 	font: inherit;
 	line-height: 18px;
@@ -1235,6 +1294,7 @@ input[type="radio"].visually-hedden {
 
 	background-color: transparent;
 	border: 2px solid #d7dcde;
+	outline: none;
 }
 
 .form-feedback input:hover {
@@ -1251,19 +1311,9 @@ input[type="radio"].visually-hedden {
 	border: 2px solid #e74246;
 }
 
-.form-feedback label {
-	display: block;
-	margin-bottom: 13px;
-	font: inherit;
-	line-height: 18px;
-	font-weight: bold;
-
-	background-color: transparent;
-}
-
 .form-feedback textarea {
-	width: 100%;
-	padding: 15px;
+	width: 730px;
+	padding: 13px;
 	margin-bottom: 45px;
 	font: inherit;
 	line-height: 18px;
@@ -1271,7 +1321,7 @@ input[type="radio"].visually-hedden {
 
 	background-color: transparent;
 	border: 2px solid #d7dcde;
-	box-sizing: border-box;
+	outline: none;
 }
 
 .form-feedback textarea:hover {
@@ -1280,6 +1330,16 @@ input[type="radio"].visually-hedden {
 
 .form-feedback textarea:focus {
 	border: 2px solid #000000;
+}
+
+.form-item label {
+	display: block;
+	margin-bottom: 12px;
+	font: inherit;
+	line-height: 18px;
+	font-weight: bold;
+
+	background-color: transparent;
 }
 
 .form-feedback .button {
