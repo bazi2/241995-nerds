@@ -771,7 +771,7 @@ input[type="radio"].visually-hedden {
   height: 19px;
 
   border: 2px solid #a6a6a6;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .filter-input-checkbox:hover + label::before,
@@ -779,7 +779,7 @@ input[type="radio"].visually-hedden {
 	border: 2px solid #000000;
 }
 
-.filter-input-checkbox:disabled + label::before {
+.filter-input-checkbox:disabled::before {
 	border: 2px solid rgba(237, 237, 237, 0.1);
 }
 
@@ -794,12 +794,12 @@ input[type="radio"].visually-hedden {
   top: -2px;
   left: -37px;
 
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
  
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 1px 1px;
 }
 
 .filter-input-radio + label::before {
@@ -819,7 +819,7 @@ input[type="radio"].visually-hedden {
 .filter-input-checkbox:checked:hover + label::after {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 1px 1px;
 }
 
 .filter-input-radio:hover + label::before,
@@ -827,7 +827,7 @@ input[type="radio"].visually-hedden {
 	border: 4px solid #4d4d4d;
 }
 
-.filter-input-radio:disabled + label::before {
+.filter-input-radio:disabled::before {
 	border: 4px solid rgba(237, 237, 237, 0.1);
 }
 
@@ -940,14 +940,24 @@ input[type="radio"].visually-hedden {
 .sort-list-arrow {
 	display: flex;
 	justify-content: flex-end;
-	
+	align-items: center;
 	width: 60px;
 }
 
-.sort-arrow-down::before {
-	display: block;
-	content: "";
+.sort-list-arrow li {
+	position: relative;
+	margin-left: 17px;
+}
 
+.sort-list-arrow a {
+	font-size: 0;
+}
+
+.sort-arrow-down::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 10px;
 	width: 0;
 	height: 0;
 
@@ -963,10 +973,10 @@ input[type="radio"].visually-hedden {
 }
 
 .sort-arrow-up::before {
-	display: block;
 	content: "";
-	margin-left: 17px;
-
+	position: absolute;
+	bottom: 9px;
+	right: 0;
 	width: 0;
 	height: 0;
 
@@ -1260,7 +1270,7 @@ input[type="radio"].visually-hedden {
 	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.footer-social-icon .active:active {
+.footer-social-icon:active {
 	fill-opacity: 0.3;
 }
 
@@ -1288,9 +1298,9 @@ input[type="radio"].visually-hedden {
 	display: none;
 
 	position: fixed;
-	bottom: 180px;
+	top: 200px;
 	left: 50%;
-	margin-left: -480px;
+	transform: translateX(-50%);
 	width: 760px;
 	padding: 75px 100px 84px 100px;
 
@@ -1406,6 +1416,7 @@ input[type="radio"].visually-hedden {
 	background-color: transparent;
 	border: 2px solid #d7dcde;
 	outline: none;
+	resize: none; 
 }
 
 .form-feedback textarea:hover {
@@ -1431,6 +1442,7 @@ input[type="radio"].visually-hedden {
 	line-height: 18px;
 	text-transform: uppercase;
 	border: none;
+	outline: none;
 }
 
 
