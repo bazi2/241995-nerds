@@ -70,7 +70,6 @@ input[type="radio"].visually-hedden {
 
 .main-header {
 	padding-top: 50px;
-	padding-bottom: 18px;
 
 	background-color: #eeeeee;	
 }
@@ -111,7 +110,7 @@ input[type="radio"].visually-hedden {
 	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
-	margin-left: 175px;
+	margin-left: 177px;
 	width: 560px;
 
 	list-style: none;
@@ -121,6 +120,7 @@ input[type="radio"].visually-hedden {
 .cart a {
 	display: block;
 	padding: 25px;
+	padding-right: 21px;
 	padding-bottom: 13px;
 	font-weight: 500;
 	color: #000000;
@@ -128,6 +128,7 @@ input[type="radio"].visually-hedden {
 
 .cart {
 	display: flex;
+	justify-content: flex-end;
 	margin: 0;
 	padding: 0;
 	margin-left: auto;
@@ -136,7 +137,7 @@ input[type="radio"].visually-hedden {
 
 .cart a {
 	position: relative;
-	padding-left: 85px;
+	padding-left: 45px;
 	margin-right: 0;
 }
 
@@ -145,7 +146,7 @@ input[type="radio"].visually-hedden {
 
 	position: absolute;
 	top: 31px;
-	left: 45px;
+	left: 19px;
 	width: 17px;
 	height: 19px;
 
@@ -164,6 +165,26 @@ input[type="radio"].visually-hedden {
 .site-navigation a:active,
 .cart a:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current {
+	position: relative;
+}
+
+.site-navigation-current a[href] {
+  pointer-events: none;
+}
+
+.site-navigation-current::after {
+	content: "";
+
+	position: absolute;
+	right: 25px;
+  	bottom: 6px;
+  	left: 25px;
+
+	height: 2px;
+	background-color: #fb565a;
 }
 
 .slider {
@@ -195,6 +216,8 @@ input[type="radio"].visually-hedden {
 
 .slider-controls label {
   position: relative;
+  top: 0px;
+  left: 20px;
   
   display: inline-block;
   width: 18px;
@@ -230,13 +253,13 @@ input[type="radio"].visually-hedden {
 
 .slider-item {
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 73px 0 81px 0;
 }
 
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 102% 18px;
 }
 
 .slider-item:nth-child(2) {
@@ -251,21 +274,21 @@ input[type="radio"].visually-hedden {
   background-position: 100% 20px;
 }
 
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+.slider-product-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
 }
 
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+.slider-product-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
 }
 
-#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+.slider-product-3:checked ~ .slider-list .slider-item:nth-child(3) {
   display: block;
 }
 
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+.slider-product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+.slider-product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+.slider-product-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -282,7 +305,7 @@ input[type="radio"].visually-hedden {
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   
   font-size: 55px;
   line-height: 55px;
@@ -292,13 +315,13 @@ input[type="radio"].visually-hedden {
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 15px 0;
   
   font-size: 16px;
   line-height: 18px;
@@ -324,7 +347,7 @@ input[type="radio"].visually-hedden {
 }
 
 .service {
-	padding-top: 80px;
+	padding-top: 76px;
 	padding-bottom: 80px;
 	border-bottom: 2px solid #eeeeee;
 }
@@ -350,13 +373,13 @@ input[type="radio"].visually-hedden {
 }
 
 .service-item .service-img {
-	margin-bottom: 30px;
+	margin-bottom: 18px;
 }
 
 .service-item .service-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 25px;
+	margin-bottom: 17px;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
@@ -364,7 +387,8 @@ input[type="radio"].visually-hedden {
 }
 
 .service-item .service-text {
-	margin-bottom: 35px;
+	margin-bottom: 32px;
+	padding-right: 20px;
 	color: #283136;
 }
 
@@ -426,7 +450,7 @@ input[type="radio"].visually-hedden {
 
 .about {	
 	padding-top: 40px;
-	padding-bottom: 70px;
+	padding-bottom: 46px;
 
 	border-bottom: 2px solid #eeeeee;
 }
@@ -443,8 +467,8 @@ input[type="radio"].visually-hedden {
 .about-features .about-features-text {
 	margin: 0;
 	padding: 0;
-	margin-top: 40px;
-	margin-bottom: 30px;
+	margin-top: 35px;
+	margin-bottom: 33px;
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
@@ -458,7 +482,7 @@ input[type="radio"].visually-hedden {
 .about-features .about-features-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
+	margin-bottom: 23px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -471,8 +495,8 @@ input[type="radio"].visually-hedden {
 
 .about-features-list .about-features-item {
 	position: relative;
-	padding-left: 38px;
-	margin-bottom: 30px;
+	padding-left: 37px;
+	margin-bottom: 25px;
 	
 	color: #283136;
 }
@@ -546,7 +570,7 @@ input[type="radio"].visually-hedden {
 	height: 90px;
 	padding: 0 25px;
 }
-/*ВОПРОС: Как правильно прописать селектор, чтобы убрать псевдоэлемент у последнего лого?*/
+
 .customers-logo::after {
 	content: "";
 	position: absolute;
@@ -794,7 +818,7 @@ input[type="radio"].visually-hedden {
   top: -2px;
   left: -37px;
 
-  width: 24px;
+  width: 27px;
   height: 24px;
  
   background-image: url("../img/checkbox.svg");

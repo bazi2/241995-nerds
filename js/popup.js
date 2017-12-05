@@ -6,7 +6,7 @@ var link = document.querySelector(".footer-button-form");
       var form = popup.querySelector("form");
       var login = popup.querySelector("[name=login]");
       var email = popup.querySelector("[name=email]");
-      
+
           
       var storage = localStorage.getItem("login");
           
