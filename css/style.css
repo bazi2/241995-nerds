@@ -46,7 +46,7 @@ a {
 }
 
 img {
-	max-width: 100%;
+	/*max-width: 100%;*/
 	height: auto;
 }
 
@@ -78,7 +78,6 @@ input[type="radio"].visually-hedden {
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
-	box-sizing: border-box;
 
 	/*Временно для pixel perfect*/
 	outline: 1px dotted red;
@@ -217,7 +216,7 @@ input[type="radio"].visually-hedden {
 .slider-controls label {
   position: relative;
   top: 0px;
-  left: 20px;
+  left: 1px;
   
   display: inline-block;
   width: 18px;
@@ -232,7 +231,7 @@ input[type="radio"].visually-hedden {
   content: "";
   
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 8px;
   z-index: 1;
   
@@ -253,13 +252,13 @@ input[type="radio"].visually-hedden {
 
 .slider-item {
   display: none;
-  padding: 73px 0 81px 0;
+  padding: 74px 0 81px 0;
 }
 
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 99% 15px;
+  background-position: 93% 15px;
 }
 
 .slider-item:nth-child(2) {
@@ -379,7 +378,7 @@ input[type="radio"].visually-hedden {
 .service-item .service-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 17px;
+	margin-bottom: 16px;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
@@ -387,7 +386,7 @@ input[type="radio"].visually-hedden {
 }
 
 .service-item .service-text {
-	margin-bottom: 32px;
+	margin-bottom: 33px;
 	padding-right: 20px;
 	color: #283136;
 }
@@ -467,7 +466,7 @@ input[type="radio"].visually-hedden {
 .about-features .about-features-text {
 	margin: 0;
 	padding: 0;
-	margin-top: 35px;
+	margin-top: 34px;
 	margin-bottom: 33px;
 	font-weight: 500;
 	font-size: 45px;
@@ -475,14 +474,16 @@ input[type="radio"].visually-hedden {
 }
 
 .about-features .about-features-description {
-	margin-bottom: 40px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 39px;
 	color: #283136;
 }
 
 .about-features .about-features-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -496,7 +497,7 @@ input[type="radio"].visually-hedden {
 .about-features-list .about-features-item {
 	position: relative;
 	padding-left: 37px;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 	
 	color: #283136;
 }
@@ -517,6 +518,7 @@ input[type="radio"].visually-hedden {
 
 .about-content-logo {
 	margin-bottom: 30px;
+	margin-left: 40px;
 }
 
 
@@ -524,6 +526,7 @@ input[type="radio"].visually-hedden {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
+	margin-left: 58px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: bold;
@@ -532,11 +535,13 @@ input[type="radio"].visually-hedden {
 
 .about-table {
 	text-align: left;
+	margin-left: 38px;
 }
 
 .about-table td {
-	padding-top: 13px;
-	padding-bottom: 13px;
+	padding-top: 8px;
+	padding-bottom: 21px;
+	padding-right: 16px;
 }
 
 .about-table tr:first-child td {
@@ -550,9 +555,14 @@ input[type="radio"].visually-hedden {
 	color: #283136;
 }
 
+.about-table sup {
+	font-size: 30px;
+	line-height: 33px;
+}
+
 .customers {
-	padding-top: 47px;
-    padding-bottom: 43px;
+	padding-top: 34px;
+    padding-bottom: 24px;
 
 	border-bottom: 2px solid #eeeeee;
 }
@@ -577,11 +587,42 @@ input[type="radio"].visually-hedden {
 	
 }
 
-.customers-logo::after {
+.customers-list .logo-1 {
+	padding-top: 29px;
+	padding-left: 32px;
+}
+
+.customers-list .logo-2 {
+	padding-top: 0px;
+	padding-left: 18px;
+}
+
+.customers-list .logo-3 {
+	padding-top: 34px;
+	padding-left: 32px;
+}
+
+.customers-list .logo-4 {
+	padding-top: 3px;
+	padding-left: 32px;
+	padding-right: 5px;
+}
+
+.customers-list .logo-2::after {
 	content: "";
 	position: absolute;
-	top: 20px;
-	right: 277px;
+	top: 16px;
+	right: 256px;
+	width: 2px;
+	height: 52px;
+	background-color: #eeeeee;
+}
+
+.customers-list .logo-3::after {
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 264px;
 	width: 2px;
 	height: 52px;
 	background-color: #eeeeee;
@@ -608,7 +649,8 @@ input[type="radio"].visually-hedden {
 .catalog-page-title {
 	margin: 0;
 	padding: 0;
-	padding-top: 63px;
+	padding-top: 73px;
+	padding-left: 35px;
 	padding-bottom: 110px;
 
 	font-size: 55px;
@@ -622,7 +664,8 @@ input[type="radio"].visually-hedden {
 .inner-page-wrapper {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 59px;
+	padding-top: 53px;
+	padding-left: 20px;
 	padding-bottom: 60px;
 }
 
@@ -650,7 +693,8 @@ input[type="radio"].visually-hedden {
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 32px;
+  margin-bottom: 10px;
 }
 
 .filter-item legend {
@@ -704,11 +748,11 @@ input[type="radio"].visually-hedden {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 159px;
 }
 
 .price-controls {
@@ -725,7 +769,7 @@ input[type="radio"].visually-hedden {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
+  padding: 8px 9px;
   margin-left: 10px;
 
   font-family: Roboto, Arial, sans-serif;
@@ -761,7 +805,7 @@ input[type="radio"].visually-hedden {
 }
 
 .filter-form-option {
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 	padding-left: 37px;
 }
 
@@ -1208,7 +1252,7 @@ input[type="radio"].visually-hedden {
 .footer-container {
 	position: absolute;
 	top: 2px;
-	left: 250px;
+	left: 232px;
 }
 
 .footer-inner {
@@ -1236,7 +1280,7 @@ input[type="radio"].visually-hedden {
 .footer-contacts .footer-adress {
 	width: 220px;
 	padding-top: 47px;
-	padding-left: 51px;
+	padding-left: 49px;
 	padding-right: 49px;
 	padding-bottom: 46px;
 	background-color: #ffffff;
@@ -1245,8 +1289,8 @@ input[type="radio"].visually-hedden {
 .footer-adress .footer-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 22px;
-	padding-top: 2px;
+	margin-bottom: 23px;
+	padding-top: 1px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1256,9 +1300,9 @@ input[type="radio"].visually-hedden {
 .footer-adress p {
 	margin: 0;
 	padding: 0;
-	padding-left: 3px;
+	padding-left: 2px;
 	padding-right: 18px;
-	margin-bottom: 17px;
+	margin-bottom: 18px;
 
 	line-height: 18px;
 	color: #666666;
@@ -1267,7 +1311,7 @@ input[type="radio"].visually-hedden {
 .footer-adress .footer-phone {
 	margin: 0;
 	padding: 0;
-	padding-left: 3px;
+	padding-left: 2px;
 	margin-bottom: 38px;
 }
 
@@ -1324,8 +1368,7 @@ input[type="radio"].visually-hedden {
 
 .footer-social-wrapper b {
 	display: block;
-	margin-top: 7px;
-	margin-left: 40px;
+	margin-top: 8px;
 	margin-bottom: 10px;
 	font-size: 36px;
 	line-height: 36px;
@@ -1335,7 +1378,6 @@ input[type="radio"].visually-hedden {
 .footer-social-wrapper p {
 	margin: 0;
 	padding: 0;
-	margin-left: 40px;
 	line-height: 22px;
 	color: #444444;
 }
