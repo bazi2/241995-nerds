@@ -1094,10 +1094,6 @@ input[type="radio"].visually-hedden {
   margin-right: 27px;	
 }
 
-.sort-item .item-active {
-  color: #231f20;
-}
-
 .catalog-sort .sort-type {
   margin-right: 27px;
 }
@@ -1108,6 +1104,10 @@ input[type="radio"].visually-hedden {
 }
 
 .sort-item a:active {
+  color: #231f20;
+}
+
+.sort-item .sort-item-active {
   color: #231f20;
 }
 
@@ -1188,7 +1188,7 @@ input[type="radio"].visually-hedden {
   border-bottom-color: #231f20;
 }
 
-.sort-active::before {
+.sort-list-arrow .arrow-active::before {
   border-top-color: #231f20;
 }
 
@@ -1384,9 +1384,9 @@ input[type="radio"].visually-hedden {
 
 .footer-container {
   position: absolute;
-  top: 1px;
-  left: 232px;
-  right: 232px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer-map .footer-contacts {  
