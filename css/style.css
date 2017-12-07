@@ -95,6 +95,8 @@ input[type="radio"].visually-hedden {
 .main-header-logo {
   width: 160px;
   height: 65px;
+  /*Временно*/
+  outline: 1px solid green;
 }
 
 .main-header-logo:hover,
