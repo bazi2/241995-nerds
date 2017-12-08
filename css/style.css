@@ -248,8 +248,8 @@ input[type="radio"].visually-hedden {
   display: inline-block;
 
   position: relative;
-  top: 0px;
-  left: 1px;  
+  top: 1px;
+  left: 0px;  
   
   width: 18px;
   height: 18px;
@@ -293,7 +293,7 @@ input[type="radio"].visually-hedden {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 15px;
+  background-position: 93% 16px;
 }
 
 .slider-item:nth-child(2) {
@@ -344,6 +344,7 @@ input[type="radio"].visually-hedden {
 .slider-item h3 {
   max-width: 600px;
 
+  padding-top: 3px;
   margin: 0;
   margin-bottom: 26px;
   
@@ -546,7 +547,7 @@ input[type="radio"].visually-hedden {
 .about-features .about-features-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-size: 16px;
   font-weight: bold;
@@ -633,8 +634,8 @@ input[type="radio"].visually-hedden {
 }
 
 .customers {
-  padding-top: 34px;
-  padding-bottom: 22px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -667,7 +668,7 @@ input[type="radio"].visually-hedden {
 }
 
 .customers-list .logo-1 {
-  padding-top: 18px;
+  padding-top: 30px;
   padding-left: 32px;
 }
 
@@ -677,12 +678,12 @@ input[type="radio"].visually-hedden {
 }
 
 .customers-list .logo-3 {
-  padding-top: 34px;
-  padding-left: 32px;
+  padding-top: 36px;
+  padding-left: 33px;
 }
 
 .customers-list .logo-4 {
-  padding-top: 3px;
+  padding-top: 10px;
   padding-left: 32px;
   padding-right: 5px;
 }
@@ -691,8 +692,8 @@ input[type="radio"].visually-hedden {
   content: "";
 
   position: absolute;
-  top: 16px;
-  right: 256px;
+  top: 17px;
+  right: 255px;
 
   width: 2px;
   height: 52px;
@@ -705,7 +706,7 @@ input[type="radio"].visually-hedden {
 
   position: absolute;
   top: 35px;
-  right: 264px;
+  right: 265px;
 
   width: 2px;
   height: 52px;
@@ -717,8 +718,8 @@ input[type="radio"].visually-hedden {
   content: "";
 
   position: absolute;
-  top: 17px;
-  right: 278px;
+  top: 22px;
+  right: 279px;
 
   width: 2px;
   height: 52px;
@@ -1422,11 +1423,11 @@ input[type="radio"].visually-hedden {
 }
 
 .main-footer {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
-.footer-catalog {
-  margin-top: 58px;
+.footer-inner {
+  margin-top: 60px;
 }
 
 .footer-map {
