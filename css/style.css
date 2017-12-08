@@ -129,8 +129,7 @@ input[type="radio"].visually-hedden {
   list-style: none;
 }
 
-.site-navigation a,
-.cart a {
+.site-navigation a {
   display: block;
 
   padding: 25px;
@@ -139,6 +138,18 @@ input[type="radio"].visually-hedden {
 
   font-weight: 500;
   color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart a:hover,
+.cart a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.cart a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .cart {
@@ -157,11 +168,18 @@ input[type="radio"].visually-hedden {
 }
 
 .cart a {
-  position: relative;
+  display: block;
 
+  position: relative;
+  
+  padding-top: 25px;
   padding-left: 45px;
   padding-right: 0;
+  padding-bottom: 13px;
   margin-right: 0;
+
+  font-weight: 500;
+  color: #000000;
 }
 
 .cart a::before {
@@ -179,46 +197,8 @@ input[type="radio"].visually-hedden {
   background-position: 0 0;
 }
 
-.cart .site-navigation::after {
-  content: "";
-
-  position: absolute;
-  bottom: 8px;
-  left: 6px;
-
-  height: 2px;
-  width: 100%;
-
-  background-color: #fb565a;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus,
-.cart a:hover,
-.cart a:focus {
-  color: #fb565a;
-}
-
-.site-navigation a:active,
-.cart a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .site-navigation-current {
-  position: relative;
-}
-
-.site-navigation-current::after {
-  content: "";
-
-  position: absolute;
-  right: 21px;
-  bottom: 8px;
-  left: 26px;
-
-  height: 2px;
-
-  background-color: #fb565a;
+  border-bottom: 2рх solid #fb565a;
 }
 
 .slider {
