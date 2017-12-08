@@ -1445,6 +1445,11 @@ input[type="radio"].visually-hedden {
   background-position: center 0;
 }
 
+.footer-map .iframe {
+  width: 100%;
+  frameborder: 0;
+}
+
 .footer-container {
   position: absolute;
   top: 0;
@@ -1859,7 +1864,6 @@ input[type="radio"].visually-hedden {
   border: none;
   outline: none;
 }
-
 
 
 
