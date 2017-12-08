@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -956,7 +958,7 @@ input[type="radio"].visually-hedden {
 
   position: absolute;
   left: -36px;
-  top: -3px;
+  top: -2px;
 
   width: 19px;
   height: 19px;
@@ -1026,11 +1028,11 @@ input[type="radio"].visually-hedden {
   content: "";
 
   position: absolute;
-  top: 4px;
+  top: 5px;
   left: -27px;
 
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
 
   background-color: #a6a6a6;
   border-radius: 50%;
@@ -1857,6 +1859,13 @@ input[type="radio"].visually-hedden {
   border: none;
   outline: none;
 }
+
+
+
+
+
+
+
 
 
 
