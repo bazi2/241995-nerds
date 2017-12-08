@@ -129,12 +129,19 @@ input[type="radio"].visually-hedden {
   list-style: none;
 }
 
+.site-navigation li {
+  padding-left: 24px;
+  padding-right: 12px;
+  margin-right: 11px;
+}
+
 .site-navigation a {
   display: block;
 
   padding: 25px;
-  padding-right: 21px;
-  padding-bottom: 13px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 3px;
 
   font-weight: 500;
   color: #000000;
@@ -164,6 +171,7 @@ input[type="radio"].visually-hedden {
 
   margin: 0;
   padding: 0;
+  padding-bottom: 6px;
   margin-left: auto;
 }
 
@@ -175,7 +183,7 @@ input[type="radio"].visually-hedden {
   padding-top: 25px;
   padding-left: 45px;
   padding-right: 0;
-  padding-bottom: 13px;
+  padding-bottom: 3px;
   margin-right: 0;
 
   font-weight: 500;
@@ -198,7 +206,7 @@ input[type="radio"].visually-hedden {
 }
 
 .site-navigation-current {
-  border-bottom: 2рх solid #fb565a;
+  border-bottom: 2px solid #fb565a;
 }
 
 .slider {
@@ -739,8 +747,8 @@ input[type="radio"].visually-hedden {
 .catalog-page-title {
   margin: 0;
   padding: 0;
-  padding-top: 73px;
-  padding-bottom: 110px;
+  padding-top: 76px;
+  padding-bottom: 107px;
 
   font-size: 55px;
   line-height: 55px;
@@ -758,8 +766,8 @@ input[type="radio"].visually-hedden {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  padding-top: 53px;
-  padding-left: 20px;
+  padding-top: 55px;
+  padding-left: 18px;
 }
 
 .inner-page-wrapper .catalog-filters {
@@ -774,7 +782,7 @@ input[type="radio"].visually-hedden {
 .filter-item {
   margin: 0;
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   
   border: none;
 }
@@ -786,8 +794,8 @@ input[type="radio"].visually-hedden {
 .range-filter {
   width: 260px;
 
-  margin-top: 32px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 7px;
 }
 
 .filter-item legend {
@@ -844,11 +852,11 @@ input[type="radio"].visually-hedden {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 19px;
 }
 
 .range-controls .toggle-max {
-  left: 159px;
+  left: 161px;
 }
 
 .price-controls {
@@ -867,7 +875,7 @@ input[type="radio"].visually-hedden {
 .price-controls input {
   width: 60px;
 
-  padding: 8px 9px;
+  padding: 9px 9px;
   margin-left: 10px;
 
   font-family: Roboto, Arial, sans-serif;
@@ -885,7 +893,7 @@ input[type="radio"].visually-hedden {
 }
 
 .filter-form legend {
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 
   font-size: 18px;
   line-height: 30px;
@@ -894,7 +902,7 @@ input[type="radio"].visually-hedden {
 }
 
 .filter-form .filter-grid {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .filter-form .filter-features {
@@ -909,8 +917,9 @@ input[type="radio"].visually-hedden {
 }
 
 .filter-form-option {
-  margin-bottom: 20px;
-  padding-left: 37px;
+  margin-bottom: 23px;
+  margin-top: -3px;
+  padding-left: 38px;
 }
 
 .filter-form-option label {
@@ -972,7 +981,7 @@ input[type="radio"].visually-hedden {
   content: "";
 
   position: absolute;
-  top: -4px;
+  top: -3px;
   left: -37px;
 
   width: 27px;
@@ -988,7 +997,7 @@ input[type="radio"].visually-hedden {
 
   position: absolute;
   top: -4px;
-  left: -37px;
+  left: -36px;
 
   width: 18px;
   height: 18px;
@@ -1016,8 +1025,8 @@ input[type="radio"].visually-hedden {
   content: "";
 
   position: absolute;
-  top: 5px;
-  left: -28px;
+  top: 4px;
+  left: -27px;
 
   width: 9px;
   height: 9px;
@@ -1038,7 +1047,7 @@ input[type="radio"].visually-hedden {
 .filter-form .filter-form-button {
   width: 260px;
 
-  padding-top: 18px;
+  padding-top: 15px;
 
   font-weight: 500;
   line-height: 18px;
@@ -1114,7 +1123,7 @@ input[type="radio"].visually-hedden {
 
   width: 280px;
 
-  margin-right: 20px;
+  margin-right: 19px;
   
 }
 
@@ -1125,11 +1134,11 @@ input[type="radio"].visually-hedden {
 }
 
 .sort-item .sort-cost {
-  margin-right: 27px; 
+  margin-right: 13px; 
 }
 
 .catalog-sort .sort-type {
-  margin-right: 27px;
+  margin-right: 20px;
 }
 
 .sort-item a:hover,
@@ -1244,7 +1253,7 @@ input[type="radio"].visually-hedden {
   -ms-flex-line-pack: justify;
   align-content: space-between;
 
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .catalog-products-wrapper .product {
@@ -1252,8 +1261,8 @@ input[type="radio"].visually-hedden {
 
   width: 360px;
 
-  margin-top: 57px;
-  margin-bottom: 6px;
+  margin-top: 56px;
+  margin-bottom: 8px;
 }
 
 .product .product-card {
@@ -1288,7 +1297,7 @@ input[type="radio"].visually-hedden {
 }
 
 .product-card .product-text {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   text-align: center;
   line-height: 18px;
@@ -1413,7 +1422,7 @@ input[type="radio"].visually-hedden {
 }
 
 .main-footer {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .footer-catalog {
@@ -1449,7 +1458,7 @@ input[type="radio"].visually-hedden {
 .footer-contacts .footer-adress {
   width: 220px;
 
-  padding-top: 47px;
+  padding-top: 48px;
   padding-left: 49px;
   padding-right: 49px;
   padding-bottom: 49px;
@@ -1482,7 +1491,7 @@ input[type="radio"].visually-hedden {
 .footer-adress .footer-phone {
   margin: 0;
   padding: 0;
-  padding-left: 2px;
+  padding-left: 3px;
   margin-bottom: 37px;
 }
 
@@ -1537,8 +1546,8 @@ input[type="radio"].visually-hedden {
   -ms-flex-pack: center;
   justify-content: center;
 
-  width: 80px;
-  height: 80px;
+  width: 78px;
+  height: 78px;
 
   background-color: #e1e1e1;
   border-radius: 50%;
@@ -1562,7 +1571,7 @@ input[type="radio"].visually-hedden {
 .footer-social-wrapper b {
   display: block;
 
-  margin-top: 6px;
+  margin-top: 5px;
   margin-bottom: 9px;
 
   font-size: 36px;
@@ -1847,7 +1856,6 @@ input[type="radio"].visually-hedden {
   border: none;
   outline: none;
 }
-
 
 
 
