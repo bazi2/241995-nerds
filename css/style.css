@@ -248,6 +248,7 @@ input[type="radio"].visually-hedden {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
 
   position: relative;
   top: 1px;
@@ -257,8 +258,6 @@ input[type="radio"].visually-hedden {
   height: 18px;
 
   padding: 8px;
-
-  vertical-align: top;
   
   border-radius: 50%;
 
@@ -615,7 +614,7 @@ input[type="radio"].visually-hedden {
   text-align: left;
 }
 
-.about-table tr:first-child td {
+.table-row:first-child td {
   padding-top: 24px;
   padding-bottom: 12px;
   padding-right: 16px;
@@ -624,7 +623,7 @@ input[type="radio"].visually-hedden {
   font-weight: bold;
 }
 
-.about-table tr:last-child td {
+.table-row:last-child td {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 5px;
@@ -773,12 +772,14 @@ input[type="radio"].visually-hedden {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  padding-top: 54px;
+  padding-top: 52px;
   padding-left: 18px;
 }
 
 .inner-page-wrapper .catalog-filters {
   width: 300px;
+
+  padding-top: 1px;
 }
 
 .inner-page-wrapper .catalog {
@@ -789,7 +790,7 @@ input[type="radio"].visually-hedden {
 .filter-item {
   margin: 0;
   padding: 0;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
   
   border: none;
 }
@@ -818,7 +819,7 @@ input[type="radio"].visually-hedden {
   height: 41px;
 
   margin-bottom: 15px;
-  padding-top: 39px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   
@@ -872,12 +873,12 @@ input[type="radio"].visually-hedden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
 
   width: 50%;
 
   font-size: 16px;
   text-transform: uppercase;
-  vertical-align: middle;
 }
 
 .price-controls input {
@@ -1055,7 +1056,7 @@ input[type="radio"].visually-hedden {
 .filter-form .filter-form-button {
   width: 260px;
 
-  padding-top: 15px;
+  padding-top: 16px;
 
   font-weight: 500;
   line-height: 18px;
@@ -1090,7 +1091,7 @@ input[type="radio"].visually-hedden {
   -ms-flex-align: center;
   align-items: center;
 
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .catalog-sort p {
@@ -1132,10 +1133,14 @@ input[type="radio"].visually-hedden {
   width: 280px;
 
   margin-right: 19px;
-  
+  padding-top: 4px;  
 }
 
 .sort-item a {
+  display: block;
+
+  margin-top: 2px;
+  margin-bottom: 2px;
   font-size: 14px;
   line-height: 18px;
   color: rgba(166, 166, 166, 0.3);
@@ -1867,7 +1872,6 @@ input[type="radio"].visually-hedden {
   border: none;
   outline: none;
 }
-
 
 
 
