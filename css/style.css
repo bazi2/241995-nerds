@@ -29,7 +29,7 @@
       
 html,
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   min-height: 2476px;
   margin: 0;
   padding: 0;
@@ -257,6 +257,8 @@ input[type="radio"].visually-hedden {
   height: 18px;
 
   padding: 8px;
+
+  vertical-align: top;
   
   border-radius: 50%;
 
@@ -613,18 +615,20 @@ input[type="radio"].visually-hedden {
   text-align: left;
 }
 
-.about-table td {
-  padding-top: 8px;
-  padding-bottom: 21px;
-  padding-right: 16px;
-}
-
 .about-table tr:first-child td {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+
   font-size: 45px;
   font-weight: bold;
 }
 
 .about-table tr:last-child td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+
   font-size: 16px;
   line-height: 18px;
   color: #283136;
@@ -751,7 +755,7 @@ input[type="radio"].visually-hedden {
   margin: 0;
   padding: 0;
   padding-top: 76px;
-  padding-bottom: 107px;
+  padding-bottom: 109px;
 
   font-size: 55px;
   line-height: 55px;
@@ -769,7 +773,7 @@ input[type="radio"].visually-hedden {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  padding-top: 55px;
+  padding-top: 54px;
   padding-left: 18px;
 }
 
@@ -837,7 +841,7 @@ input[type="radio"].visually-hedden {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
 
   width: 4px;
@@ -873,6 +877,7 @@ input[type="radio"].visually-hedden {
 
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .price-controls input {
@@ -1292,7 +1297,7 @@ input[type="radio"].visually-hedden {
   text-align: center;
 }
 
-.product-card .product-title a {
+.product-title a {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1392,8 +1397,6 @@ input[type="radio"].visually-hedden {
 }
 
 .product-pagination a:active {
-  opacity: 0.3;
-
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
@@ -1580,7 +1583,7 @@ input[type="radio"].visually-hedden {
   display: block;
 
   margin-top: 5px;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-size: 36px;
   line-height: 36px;
@@ -1864,7 +1867,6 @@ input[type="radio"].visually-hedden {
   border: none;
   outline: none;
 }
-
 
 
 
